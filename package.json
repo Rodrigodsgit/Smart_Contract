@@ -1,0 +1,14 @@
+{
+  "name": "smart_contract",
+  "version": "1.0.0",
+  "description": "Aplicação de Vending Machine em Solidity",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rodrigo Damasceno, Lucas Andrade, Luis Carlos",
+  "license": "ISC"
+}
