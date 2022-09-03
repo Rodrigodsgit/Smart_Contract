@@ -1,2 +1,9 @@
 node_modules
 build
+
+# files 
+.env
+
+
+# ganache files 
+.docker/ganache
