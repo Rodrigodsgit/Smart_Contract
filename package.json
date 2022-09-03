@@ -12,6 +12,7 @@
   "author": "Rodrigo Damasceno, Lucas Andrade, Luis Carlos",
   "license": "ISC",
   "dependencies": {
+    "@truffle/hdwallet-provider": "^2.0.14",
     "dotenv": "^16.0.1"
   }
 }
