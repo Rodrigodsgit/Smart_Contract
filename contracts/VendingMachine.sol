@@ -40,7 +40,7 @@ contract VendingMachine {
     //TODO: Definir quando pode fazer saque de ether
     function Withdrawal() public {}
 
-    //TODO: Definir valor de compra
+    //TODO: Definir valor de compra/venda
     function PriceMiles() public {}
 
     function PurchaseMiles(uint256 amount) public payable {
