@@ -22,7 +22,7 @@ contract UserContract {
         address payable seller = mile.owner;
 
         require(msg.value >= mile.price,
-            unicode"")
+            unicode"");
     }
 
     function SoldIn() public {}

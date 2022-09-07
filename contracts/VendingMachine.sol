@@ -3,12 +3,16 @@ pragma solidity >=0.4.22 <0.9.0;
 
 contract E_Mile {
 
-    address public owner;
+    address private owner;
     mapping(address => uint256) private milesBalance;
+    uint256 private pricePurchase;
+    uint256 private priceSell;
 
     constructor() {
         owner = msg.sender;
         milesBalance[address(this)] = 100;
+        pricePurchase = 1 gwei;
+        priceSell = 1 gwei;
 
     }
 
@@ -28,15 +32,23 @@ contract E_Mile {
       return milesBalance[msg.sender];
     }
 
-    function restokMiles(uint256 amount) public {
+    function getPricePurchase()public view returns (uint256){
+      return pricePurchase;
+    }
+
+    function getPriceSell()public view returns (uint256){
+      return priceSell;
+    }
+
+    function restokMiles(uint256 _amount) public {
         require(
             msg.sender == owner,
             unicode"Somente o proprietário da máquina de venda automática pode reabastecer."
         );
-        milesBalance[address(this)] += amount;
+        milesBalance[address(this)] += _amount;
     }
 
-    function RestokEther() public payable {
+    function restokEther() public payable {
         require(
             msg.sender == owner,
             unicode"Somente o proprietário da máquina de venda automática pode reabastecer."
@@ -48,51 +60,118 @@ contract E_Mile {
 
     }
 
-    //TODO: Definir quando pode fazer saque de ether
-    function Withdrawal() public {}
+    function convert(uint256 _amount, string calldata _partition) private pure returns(uint){
+        uint256 amountReal;
+        if(keccak256(bytes(_partition)) == keccak256(bytes("wei"))){
+            amountReal = _amount * 1 wei;
+        } 
+        else if (keccak256(bytes(_partition)) == keccak256(bytes("gwei"))){
+            amountReal = _amount * 1 gwei;
 
-    //TODO: Definir valor de compra
-    function PriceMiles() public {}
+        // }else if(keccak256(bytes(_partition)) == keccak256(bytes("finney"))){
+        //      amountReal = _amount * 1 finney;
+        }
+        else if(keccak256(bytes(_partition)) == keccak256(bytes("ether"))){
+            amountReal = _amount * 1 ether;
+        }
+        else{
+            amountReal = 0;
+        }
 
-    function PurchaseMiles(uint256 amount) public payable {
+        return amountReal;
+    }
+
+    function withdraw(uint256 _amount, string calldata _partition) public payable {
+        
+        uint256 amountReal = convert(_amount, _partition);
+        
         require(
-            msg.value >= amount * 1 gwei,
+            msg.sender == owner,
+            unicode"Somente o proprietário da máquina de venda automática pode efetuar saques."
+        );
+        require(
+            amountReal <= address(this).balance,
+            unicode"Saldo para saque insuficiente."
+        );
+        require(
+            amountReal > 0,
+            unicode"O valor para ser sacado deve ser superior a 0"
+        );
+
+        payable(owner).transfer(amountReal);
+
+    }
+
+    function priceMilesPurchase(uint256 _amount, string calldata _partition) public {
+        uint256 priceValid = convert(_amount, _partition);
+        
+        require(
+            msg.sender == owner,
+            unicode"Somente o proprietário da máquina de venda automática pode mudar o preço de compra."
+        );
+
+        require(
+            priceValid != 0,
+            unicode"Somente o proprietário da máquina de venda automática pode mudar o preço de compra."
+        );
+
+
+        pricePurchase = priceValid;
+
+    }
+
+    function priceMilesSell(uint256 _amount, string calldata _partition) public {
+        uint256 priceValid = convert(_amount, _partition);
+        require(
+            msg.sender == owner,
+            unicode"Somente o proprietário da máquina de venda automática pode o preço de venda."
+        );
+
+        priceSell = priceValid;
+
+    }
+
+    function purchaseMiles(uint256 _amount) public payable {
+        require(
+            msg.value >= pricePurchase,
             unicode"Não há ether suficiente para comprar um milha, o preço é de 1 ether por milha"
         );
 
         require(
-            milesBalance[address(this)] >= amount,
+            milesBalance[address(this)] >= _amount,
             unicode"Não há milhas suficientes na máquina de venda automática."
         );
 
         require(
-          amount > 0,
+          _amount > 0,
           unicode"O valor mínimo para compra de milhas deve ser igual ou superior a 1"
         );
 
-        milesBalance[address(this)] -= amount;
-        milesBalance[msg.sender] += amount;
+        milesBalance[address(this)] -= _amount;
+        milesBalance[msg.sender] += _amount;
     }
 
-    function PurchaseEther(uint256 amount) public payable {
+    function sellMiles(uint256 _amount) public payable {
+        uint256 ticket = _amount * priceSell;
+
         require(
-          address(this).balance >= amount * 1 gwei,
+          address(this).balance >= priceSell,
           unicode"Desculpe, no momento não há ether suficiente para comprar suas milhas, tente novamente mais tarde."
         );
 
         require(
-          milesBalance[msg.sender] >= amount,
+          milesBalance[msg.sender] >= _amount,
           unicode"Você não possui essa quantidade de milhas."
         );
 
         require(
-          amount > 0,
+          _amount > 0,
           unicode"O valor mínimo para venda de milhas deve ser igual ou superior a 1"
         );
-       milesBalance[address(this)] += amount;
-       milesBalance[msg.sender] -= amount;
+       milesBalance[address(this)] += _amount;
+       milesBalance[msg.sender] -= _amount;
 
-       payable(msg.sender).transfer( amount * 1 gwei);
+       payable(msg.sender).transfer(ticket);
     }
 
 
