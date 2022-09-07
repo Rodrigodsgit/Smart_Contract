@@ -24,7 +24,7 @@ Mostra com fizemos o gerenciamento do projeto , atraves do Trello
 
 ## Colaboradores 
 
-![Amanda Karla](https://img.shields.io/badge/Dev-Amanda%20Karla-lightgrey?style=for-the-badge&logo=devdotto) [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Amanda-Almeida-costa) [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]()
+![Amanda Karla](https://img.shields.io/badge/Dev-Amanda%20Karla-lightgrey?style=for-the-badge&logo=devdotto) [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Amanda-Almeida-costa) [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/amanda-almeida-312942232)
 
 ![Naiara Araujo de Lima](https://img.shields.io/badge/Dev-Naiara%20Araujo%20de%20Lima-lightgrey?style=for-the-badge&logo=devdotto) [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Araujopuyanawa) [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/naiara-araujo-de-lima-149697239)
 

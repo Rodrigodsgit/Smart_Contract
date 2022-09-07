@@ -1,11 +1,11 @@
 require('dotenv').config();
-const { INFURA_API_URL } = process.env;
+const { INFURA_API_URL, DEPLOY_KEY_1, DEPLOY_KEY_2 } = process.env;
 
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 
 const private_keys = [  
-  'f602740a562f0f27b6c5c4b647f878c39a10bc92d6d0b8b824e74a7e4182d4ff',
-  'd0831b833d9cfbbf2e94e04391abd26bba3e1f85bf3462d7e3e48e14282b224f',
+  DEPLOY_KEY_1,
+  DEPLOY_KEY_2,
 ]
 
 
