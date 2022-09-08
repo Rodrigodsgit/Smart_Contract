@@ -6,4 +6,4 @@
 
 
 ## Andamanto do Projeto
-![](../assets/trello-andamento.png)
+![andamento](../assets/trello-andamento.png)
