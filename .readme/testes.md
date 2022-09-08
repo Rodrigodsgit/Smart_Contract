@@ -14,7 +14,7 @@ output:
 ## Testes Funcionais 
 
 ### Teste no Remix by Owner
-Funcao PriceMilesPurchase
+Função PriceMilesPurchase
 ![test 1](../assets/E-miles%20funcao%20priceMilesPurchase%20-%20By%20owner.gif)
 
 

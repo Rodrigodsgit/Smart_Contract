@@ -54,8 +54,8 @@ contract E_Mile {
             unicode"Somente o proprietário da máquina de venda automática pode reabastecer."
         );
         require(
-            msg.value >=  1 gwei,
-            unicode"O valor mínimo para reabastecer é 1 gwei"
+            msg.value >=  1 wei,
+            unicode"O valor mínimo para reabastecer é 1 wei"
         );
 
     }
@@ -108,8 +108,8 @@ contract E_Mile {
         );
 
         require(
-            priceValid != 0,
-            unicode"Somente o proprietário da máquina de venda automática pode mudar o preço de compra."
+            priceValid > 0,
+            unicode"O valor para compra de E-Miles não pode ser 0"
         );
 
 
@@ -124,6 +124,11 @@ contract E_Mile {
             unicode"Somente o proprietário da máquina de venda automática pode o preço de venda."
         );
 
+        require(
+            priceValid > 0,
+            unicode"O valor para venda de E-Miles não pode ser 0"
+        );
+
         priceSell = priceValid;
 
     }
@@ -131,17 +136,17 @@ contract E_Mile {
     function purchaseMiles(uint256 _amount) public payable {
         require(
             msg.value >= pricePurchase,
-            unicode"Não há ether suficiente para comprar um milha, o preço é de 1 ether por milha"
+            unicode"Não há ether suficiente para comprar uma E-Mile"
         );
 
         require(
             milesBalance[address(this)] >= _amount,
-            unicode"Não há milhas suficientes na máquina de venda automática."
+            unicode"Não há E-Miles suficientes na máquina de venda automática."
         );
 
         require(
           _amount > 0,
-          unicode"O valor mínimo para compra de milhas deve ser igual ou superior a 1"
+          unicode"O valor mínimo para compra de E-Miles deve ser igual ou superior a 1"
         );
 
         milesBalance[address(this)] -= _amount;
@@ -153,17 +158,17 @@ contract E_Mile {
 
         require(
           address(this).balance >= priceSell,
-          unicode"Desculpe, no momento não há ether suficiente para comprar suas milhas, tente novamente mais tarde."
+          unicode"Desculpe, no momento não há ether suficiente para comprar suas E-Miles, tente novamente mais tarde."
         );
 
         require(
           milesBalance[msg.sender] >= _amount,
-          unicode"Você não possui essa quantidade de milhas."
+          unicode"Você não possui essa quantidade de E-Miles."
         );
 
         require(
           _amount > 0,
-          unicode"O valor mínimo para venda de milhas deve ser igual ou superior a 1"
+          unicode"O valor mínimo para venda de E-Miles deve ser igual ou superior a 1"
         );
        milesBalance[address(this)] += _amount;
        milesBalance[msg.sender] -= _amount;
