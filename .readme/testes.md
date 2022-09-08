@@ -18,7 +18,10 @@ Função PriceMilesPurchase
 ![test 1](../assets/E-miles%20funcao%20priceMilesPurchase%20-%20By%20owner.gif)
 
 
-<img src="../assets/E-miles%20funcao%20priceMilesPurchase%20-%20By%20owner.gif" alt="test 1">
+Função PriceMilesSelll
+![test 2](../assets/E-miles%20funcao%20priceMilesSell%20-%20By%20owner.gif)
+
+
 
 
 ### Teste no Remix by User
