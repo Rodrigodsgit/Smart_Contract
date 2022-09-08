@@ -67,9 +67,6 @@ contract E_Mile {
         } 
         else if (keccak256(bytes(_partition)) == keccak256(bytes("gwei"))){
             amountReal = _amount * 1 gwei;
-
-        // }else if(keccak256(bytes(_partition)) == keccak256(bytes("finney"))){
-        //      amountReal = _amount * 1 finney;
         }
         else if(keccak256(bytes(_partition)) == keccak256(bytes("ether"))){
             amountReal = _amount * 1 ether;
