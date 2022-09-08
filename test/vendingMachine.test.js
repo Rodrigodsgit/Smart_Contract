@@ -4,12 +4,13 @@ contract('VendingMachine', (accounts) => {
   let vending;
   let miles;
   let price;
+  let pricePurchase;
+  let etherBalance;
   const initialMiles = 100;
 
   before(async () => {
     vending = await VendingMachine.deployed();
   })
-
 
   describe('VendingMachine', () => {
     it('should to read the miles in the contract', async () => {      
@@ -19,7 +20,19 @@ contract('VendingMachine', (accounts) => {
 
     it('should to read the price miles for sell', async () => {      
       price = await vending.PriceMiles();
-      console.log(price)
+    })
+
+    it('balance inicial igual a zero', async () => {
+      etherBalance = await vending.GetEtherBalance();  
+      const BN = {
+        length: 1,
+        negative: 0,
+        red: null,
+        words: [
+          10
+        ], 
+      };
+      assert.equal(etherBalance, BN)
     })
 
   })

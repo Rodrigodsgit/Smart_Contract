@@ -13,4 +13,12 @@ output:
 
 ## Testes Funcionais 
 
-Teste do Lucas 
+### Teste no Remix by Owner
+Funcao PriceMilesPurchase
+![test 1](../assets/E-miles%20funcao%20priceMilesPurchase%20-%20By%20owner.gif)
+
+
+<img src="../assets/E-miles%20funcao%20priceMilesPurchase%20-%20By%20owner.gif" alt="test 1">
+
+
+### Teste no Remix by User
