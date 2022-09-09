@@ -1,4 +1,5 @@
 const VendingMachine = artifacts.require("VendingMachine");
+const expect = require('expect.js')
 
 contract('VendingMachine', (accounts) => {
   let vending;
@@ -32,7 +33,7 @@ contract('VendingMachine', (accounts) => {
           10
         ], 
       };
-      assert.equal(etherBalance, BN)
+      expect().to.be(BN)
     })
 
   })
