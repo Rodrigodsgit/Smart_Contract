@@ -18,6 +18,7 @@
   "dependencies": {
     "@truffle/hdwallet-provider": "^2.0.14",
     "dotenv": "^16.0.1",
+    "expect.js": "^0.3.1",
     "web3": "^1.7.5"
   },
   "devDependencies": {
