@@ -116,7 +116,6 @@ contract E_Mile {
             unicode"O valor para compra de E-Miles não pode ser 0"
         );
 
-
         pricePurchase = priceValid;
 
     }
@@ -139,19 +138,19 @@ contract E_Mile {
 
     function purchaseMiles(uint256 _amount) public payable {
         uint256 ticket = _amount * pricePurchase;
-        require(
-            msg.value == ticket,
-            unicode"Não há ether suficiente para comprar uma E-Mile"
-        );
-
-        require(
-            milesBalance[address(this)] >= ticket,
-            unicode"Não há E-Miles suficientes na máquina de venda automática."
-        );
 
         require(
           _amount > 0,
           unicode"O valor mínimo para compra de E-Miles deve ser igual ou superior a 1"
+        );
+        
+        require(
+            msg.value == ticket,
+            unicode"Não há ether suficiente para comprar uma E-Mile"
+        );
+        require(
+            milesBalance[address(this)] >= _amount,
+            unicode"Não há E-Miles suficientes na máquina de venda automática."
         );
 
         milesBalance[address(this)] -= _amount;
@@ -180,6 +179,5 @@ contract E_Mile {
 
        payable(msg.sender).transfer(ticket);
     }
-
 
 }
