@@ -45,6 +45,10 @@ contract E_Mile {
             msg.sender == owner,
             unicode"Somente o proprietário da máquina de venda automática pode reabastecer."
         );
+        require(
+            _amount >=  1 ,
+            unicode"O valor mínimo para reabastecer é 1 E-Mile"
+        );
         milesBalance[address(this)] += _amount;
     }
 
@@ -134,13 +138,14 @@ contract E_Mile {
     }
 
     function purchaseMiles(uint256 _amount) public payable {
+        uint256 ticket = _amount * pricePurchase;
         require(
-            msg.value >= pricePurchase,
+            msg.value == ticket,
             unicode"Não há ether suficiente para comprar uma E-Mile"
         );
 
         require(
-            milesBalance[address(this)] >= _amount,
+            milesBalance[address(this)] >= ticket,
             unicode"Não há E-Miles suficientes na máquina de venda automática."
         );
 
