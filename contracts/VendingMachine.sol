@@ -179,8 +179,5 @@ contract E_Mile {
 
         payable(msg.sender).transfer(ticket);
     }
-<<<<<<< HEAD
 
-=======
->>>>>>> 7f219b3bc552c5544c471e9ed824c2b9bb44a72d
 }
