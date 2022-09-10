@@ -1,0 +1,11 @@
+#folder
+node_modules
+build
+.idea
+
+# files 
+.env
+
+
+# ganache files 
+.docker/ganache
