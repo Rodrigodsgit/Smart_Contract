@@ -62,7 +62,7 @@ contract E_Mile {
     }
 
     function convert(uint256 _amount, string calldata _partition)
-        private
+        public
         pure
         returns (uint256)
     {

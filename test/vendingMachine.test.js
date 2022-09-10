@@ -5,13 +5,12 @@ contract('VendingMachine', (accounts) => {
   let miles;
   let etherBalance;
   let milesClient;
-  let etherClient;
   let priceSell;
   let pricePurchase;
 
 
   before(async () => {
-    vending = await VendingMachine.deployed();
+     vending = await VendingMachine.deployed();
   })
 
   describe('VendingMachine', () => {
@@ -45,6 +44,29 @@ contract('VendingMachine', (accounts) => {
       await vending.restokMiles(10);
       milesAtt = await vending.getMiles();
       assert.equal(milesAtt, 110);
+    })
+
+    it('Reabastecendo 1 wei', async() =>{
+      await vending.restokEther({
+        value: web3.utils.toWei('1', "wei")
+    });
+      etherBalance = await vending.getBalance();
+      assert.equal(etherBalance, 1);
+    })
+
+    it('Convertendo valores para wei', async() =>{
+      const convertwei = await vending.convert(5,'wei');
+      assert.equal(convertwei,5);
+    })
+
+    it('Convertendo valores para gwei', async() =>{
+      const convertgwei = await vending.convert(5,'gwei');
+      assert.equal(convertgwei,5000000000);
+    })
+
+    it('Convertendo valores para ether', async() =>{
+      const convertether = await vending.convert(5,'ether');
+      assert.equal(convertether,5000000000000000000);
     })
 
 
