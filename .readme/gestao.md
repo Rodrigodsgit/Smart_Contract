@@ -7,3 +7,6 @@
 
 ## Andamanto do Projeto
 ![andamento](../assets/trello-andamento.png)
+
+## Final do MVP
+![final](../assets/trello-geral.png)
