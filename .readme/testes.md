@@ -1,10 +1,3 @@
----
-output: 
-html_document:
-css: ./readme.css
-self_contained: no
----
-
 [Voltar](../Readme.md)
 
 ## Implemntacao dos testes 
@@ -14,36 +7,37 @@ self_contained: no
 ## Testes Funcionais 
 
 ### Teste no Remix by Owner
-Função PriceMilesPurchase
+
+#### Função PriceMilesPurchase
 ![test 1](../assets/E-miles%20funcao%20priceMilesPurchase%20-%20By%20owner.gif)
 
-Função PriceMilesSelll
+#### Função PriceMilesSelll
 ![test 2](../assets/E-miles%20funcao%20priceMilesSell%20-%20By%20owner.gif)
 
-Função restokEther
-![test 3](../assets/E-miles%20funcao%20restokEther%20-%20By%20owner.gif)
+#### Função restokEther
+![test 3](../assets/E-miles%20funcao%20restokEther-%20By%20owner.gif)
 
-Função restokMiles
+#### Função restokMiles
 ![test 4](../assets/E-miles%20funcao%20restokMiles%20-%20By%20owner.gif)
 
-Função withdraw
+#### Função withdraw
 ![test 5](../assets/E-miles%20funcao%20withdraw%20-%20By%20owner.gif)
 
-
 ### Teste no Remix by User
-Função priceMilesPurchase
+
+#### Função priceMilesPurchase
 ![test 6](../assets/E-miles%20funcao%20priceMilesPurchase%20-%20By%20owner.gif)
 
-Função PriceMilesSelll
+#### Função PriceMilesSelll
 ![test 7](../assets/E-miles%20funcao%20priceMilesPurchase%20-%20By%20owner.gif)
 
-Função restokEther
-![test 8](../assets/E-miles%20funcao%20restokEther%20-%20By%20owner.gif)
+#### Função restokEther
+![test 8](../assets/E-miles%20funcao%20restokEther-%20By%20user.gif)
 
-Função restokMiles
+#### Função restokMiles
 ![test 9](../assets/E-miles%20funcao%20restokMiles%20-%20By%20owner.gif)
 
-Função withdraw
+#### Função withdraw
 ![test 10](../assets/E-miles%20funcao%20withdraw%20-%20By%20owner.gif)
 
 
