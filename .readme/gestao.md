@@ -9,4 +9,4 @@
 ![andamento](../assets/trello-andamento.png)
 
 ## Final do MVP
-![final](../assets/trello-geral.png)
+![final](../assets/trello-final.png)
