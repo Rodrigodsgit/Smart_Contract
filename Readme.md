@@ -3,7 +3,7 @@
 
 ## Gestao do Projeto
 
-Mostra com fizemos o gerenciamento do projeto , atraves do Trello
+Mostra com fizemos o gerenciamento do projeto , através do Trello
 
 [Trello](./.readme/gestao.md)
 
@@ -15,7 +15,7 @@ Mostra com fizemos o gerenciamento do projeto , atraves do Trello
 
 
 
-## Configuracao ambiente / Instalacao local / Testes da aplicacao 
+## Configuração ambiente / Instalação local / Testes da aplicação 
 
 [Configuracao](./.readme/config.md)
 
