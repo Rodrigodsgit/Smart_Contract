@@ -29,7 +29,7 @@
 ![test 6](../assets/E-miles%20funcao%20priceMilesPurchase%20-%20By%20user.gif)
 
 #### Função PriceMilesSelll
-![test 7](../assets/E-miles%20funcao%20priceMilesSell%20-%20By%20user.gif)
+![test 7](../assets/E-miles%20funcao%20priceMilesSell%20-%20By%20user.giff)
 
 #### Função restokEther
 ![test 8](../assets/E-miles%20funcao%20restokEther-%20By%20user.gif)
