@@ -26,18 +26,18 @@
 ### Teste no Remix by User
 
 #### Função priceMilesPurchase
-![test 6](../assets/E-miles%20funcao%20priceMilesPurchase%20-%20By%20owner.gif)
+![test 6](../assets/E-miles%20funcao%20priceMilesPurchase%20-%20By%20user.gif)
 
 #### Função PriceMilesSelll
-![test 7](../assets/E-miles%20funcao%20priceMilesPurchase%20-%20By%20owner.gif)
+![test 7](../assets/E-miles%20funcao%20priceMilesPurchase%20-%20By%20user.gif)
 
 #### Função restokEther
 ![test 8](../assets/E-miles%20funcao%20restokEther-%20By%20user.gif)
 
 #### Função restokMiles
-![test 9](../assets/E-miles%20funcao%20restokMiles%20-%20By%20owner.gif)
+![test 9](../assets/E-miles%20funcao%20restokMiles%20-%20By%20user.gif)
 
 #### Função withdraw
-![test 10](../assets/E-miles%20funcao%20withdraw%20-%20By%20owner.gif)
+![test 10](../assets/E-miles%20funcao%20withdraw%20-%20By%20user.gif)
 
 
