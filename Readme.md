@@ -39,7 +39,7 @@ Veja o passo a passo de como configurar localmente essa aplicação para que con
 
 ---
 
-# 🛠Requisitos & Funcionalidades
+# 📋Requisitos & Funcionalidades
 Elucidação dos requisitos solicidatos e as funcionalidades dispostas na implemnetação do Smart Contract da Vending Machine. 
 
 ## [Funcionalidades](./.readme/funcionalidades.md)
