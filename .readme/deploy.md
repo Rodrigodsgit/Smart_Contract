@@ -32,3 +32,15 @@ truffle deploy --network rinkeby
 ```
 
 ![deploy oficial](../assets/deploy_rinkeby.png)
+
+Em seguida podemos ver mais alguma informações interessantes a respeito do deploy realizado. Como a quantidade de requests feitas:
+
+![deploy requests](../assets/requests.png)
+
+E também informações sobre o deploy em si.
+
+![deploy ](../assets/deploy.jpeg)
+
+Por fim o endereço do deploy na rede de testes Rinkeby Etherscan.
+
+![deploy ](../assets/Etherscan.png)

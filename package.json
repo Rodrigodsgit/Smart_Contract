@@ -13,7 +13,7 @@
     "eth",
     "blockchain"
   ],
-  "author": "Amanda Karla, Henrique Constant, Lucas Andrade, Luis Carlos, Naiara Araujo de Lima, Rodrigo Damasceno",
+  "author": "Amanda Karla, Lucas Andrade, Luis Carlos, Naiara Araujo de Lima, Rodrigo Damasceno",
   "license": "ISC",
   "dependencies": {
     "@truffle/hdwallet-provider": "^2.0.14",
