@@ -1,13 +1,19 @@
+# 🛫E-Miles
+
 <div id="image01" style="display: inline_block" align="center">
   <img src=".\assets\logo.png" align="center"/>
 </div>
 
+----- 
 
-## Gestao do Projeto
 
-Mostra com fizemos o gerenciamento do projeto , através do Trello
+## Gestão do Projeto
 
-[Trello](./.readme/gestao.md)
+Acompanhe aqui como utilizamos a metodologia Kanban através da ferramenta Trello para fracionar e estrturar como seriam realizadas as tarefas por integrantes do grupo.
+
+## [Trello](./.readme/gestao.md)
+
+----
 
 ## Tecnologias Aplicadas
 
@@ -16,14 +22,26 @@ Mostra com fizemos o gerenciamento do projeto , através do Trello
  - ![Trello](https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white) ![Slack](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) 
 
 
+---
+## Configuração ambiente & Instalação local 
 
-## Configuração ambiente / Instalação local / Testes da aplicação 
+Veja o passo a passo de como configurar localmente essa aplicação para que consiga utiliza-lá no seu computador. Deixamos alguns dos principais comandos e soluções para possíves erros que podem aparecer :).
 
-[Configuracao](./.readme/config.md)
+## [Configuracao](./.readme/config.md)
 
+---
 
-[Testes](./.readme/testes.md)
+# Testes da aplicação
+Demonstração dos testes feitos via Mocha e alguns possíveis casos de uso do Smart Contract feito manualmente pelo Remix. 
 
+## [Testes](./.readme/testes.md)
+
+---
+## Deploy 
+Deploy da aplicação desenvolvida, sendo feita tanto localmente utilizando do Truffle e o Ganache, quanto seu deploy na rede da Rinkeby.
+## [Deploy](./.readme/deploy.md)
+
+---
 ## Colaboradores 
 
 ![Amanda Karla](https://img.shields.io/badge/Dev-Amanda%20Almeida-lightgrey?style=for-the-badge&logo=devdotto) [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Amanda-Almeida-costa) [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/amanda-almeida-312942232)
@@ -35,10 +53,3 @@ Mostra com fizemos o gerenciamento do projeto , através do Trello
 ![Lucas Andrade](https://img.shields.io/badge/Dev-Lucas%20Andrade-lightgrey?style=for-the-badge&logo=devdotto) [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Lucas-andrade-nascimento) [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucas-as-nascimento)
 
  ![Luis Carlos](https://img.shields.io/badge/Dev-Luis%20Carlos%20Silva-lightgrey?style=for-the-badge&logo=devdotto) [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://www.github.com/luisroxis) [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/luiscroxis)  
-
-
-## Deploy 
-
-[Deploy](./.readme/deploy.md)
-
-## Aplicacao (react) opcional 
