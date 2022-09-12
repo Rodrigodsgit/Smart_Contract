@@ -6,6 +6,8 @@ Juntamente com o crescimento exponencial do mundo de criptos ativos, a empresa E
 
 Deste modo foi desenvolvido um Smart Contract no qual é possível comprar milhas através do Ethereum, além do usuário também poder efetuar a venda das sua milhas por Ethereum. Abaixo você poderá acompanhar uma descrição de como foi desenvolvido esse MVP de teste.
 
+`Acompanhe também nossa apresentação:` [E-Miles](https://docs.google.com/presentation/d/1mCrRGZuq9NxM0B_IxnJlctPmZVVW6rgBbGJXSZp7xzY/edit?usp=sharing)
+
 <div id="image01" style="display: inline_block" align="center">
   <img src=".\assets\logo.png" align="center"/>
 </div>
@@ -36,6 +38,11 @@ Veja o passo a passo de como configurar localmente essa aplicação para que con
 ## [Configuracao](./.readme/config.md)
 
 ---
+
+# 🛠Requisitos & Funcionalidades
+Elucidação dos requisitos solicidatos e as funcionalidades dispostas na implemnetação do Smart Contract da Vending Machine. 
+
+## [Funcionalidades](./.readme/funcionalidades.md)
 
 # 🛠Testes da aplicação
 Demonstração dos testes feitos via Mocha e alguns possíveis casos de uso do Smart Contract feito manualmente pelo Remix. 
