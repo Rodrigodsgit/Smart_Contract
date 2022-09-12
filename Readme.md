@@ -13,7 +13,7 @@ Deste modo foi desenvolvido um Smart Contract no qual é possível comprar milha
 ----- 
 
 
-## Gestão do Projeto
+## 📑Gestão do Projeto
 
 Acompanhe aqui como utilizamos a metodologia Kanban através da ferramenta Trello para fracionar e estrturar como seriam realizadas as tarefas por integrantes do grupo.
 
@@ -21,7 +21,7 @@ Acompanhe aqui como utilizamos a metodologia Kanban através da ferramenta Trell
 
 ----
 
-## Tecnologias Aplicadas
+## 📱Tecnologias Aplicadas
 
  - ![Solidity](https://img.shields.io/badge/Solidity-%23363636.svg?style=for-the-badge&logo=solidity&logoColor=white) ![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=Ethereum&logoColor=white)  ![JavaScript](	https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
  - ![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) 	![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)  ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
@@ -29,7 +29,7 @@ Acompanhe aqui como utilizamos a metodologia Kanban através da ferramenta Trell
 
 
 ---
-## Configuração ambiente & Instalação local 
+## ⚙Configuração ambiente & Instalação local 
 
 Veja o passo a passo de como configurar localmente essa aplicação para que consiga utiliza-lá no seu computador. Deixamos alguns dos principais comandos e soluções para possíves erros que podem aparecer :).
 
@@ -37,18 +37,18 @@ Veja o passo a passo de como configurar localmente essa aplicação para que con
 
 ---
 
-# Testes da aplicação
+# 🛠Testes da aplicação
 Demonstração dos testes feitos via Mocha e alguns possíveis casos de uso do Smart Contract feito manualmente pelo Remix. 
 
 ## [Testes](./.readme/testes.md)
 
 ---
-## Deploy 
+## 💻Deploy 
 Deploy da aplicação desenvolvida, sendo feita tanto localmente utilizando do Truffle e o Ganache, quanto seu deploy na rede da Rinkeby.
 ## [Deploy](./.readme/deploy.md)
 
 ---
-## Colaboradores 
+## 👨‍💻Colaboradores 
 
 ![Amanda Karla](https://img.shields.io/badge/Dev-Amanda%20Almeida-lightgrey?style=for-the-badge&logo=devdotto) [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Amanda-Almeida-costa) [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/amanda-almeida-312942232)
 
