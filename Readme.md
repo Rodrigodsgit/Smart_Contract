@@ -1,4 +1,6 @@
-# ![E-miles](./assets/logo.png)
+
+  <img src=".\assets\logo.png" align="center"/>
+
 
 
 ## Gestao do Projeto
