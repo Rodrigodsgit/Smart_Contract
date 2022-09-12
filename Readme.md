@@ -1,6 +1,6 @@
-
+<div id="image01" style="display: inline_block" align="center">
   <img src=".\assets\logo.png" align="center"/>
-
+</div>
 
 
 ## Gestao do Projeto
