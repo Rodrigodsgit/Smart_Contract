@@ -1,4 +1,10 @@
 # 🛫E-Miles
+A associação Brasileira das Empresas do Mercado de Fidelização (ABEMF)registrou um faturamento bruto de R＄ 1,89 bilhões de suas associadas, empresas que administram milhas áreas e pontos, 11,7% a mais do que no 4° trimestre de 2020. Os indicadores mostram o quanto esse mercado é lucrativo.
+
+O mercado de compra e venda de milhas ou pontos de programas de fidelidade ligados a companhias aéreas decolou no Brasil e já movimenta mais de R$ 500 milhões por ano, segundo estimativas de empresas do segmento.
+Juntamente com o crescimento exponencial do mundo de criptos ativos, a empresa E-Miles solicitou que fosse possível efetuar compra e venda das sua milhas através da moeda Ethereum.
+
+Deste modo foi desenvolvido um Smart Contract no qual é possível comprar milhas através do Ethereum, além do usuário também poder efetuar a venda das sua milhas por Ethereum. Abaixo você poderá acompanhar uma descrição de como foi desenvolvido esse MVP de teste.
 
 <div id="image01" style="display: inline_block" align="center">
   <img src=".\assets\logo.png" align="center"/>

@@ -1,6 +1,6 @@
 [Voltar](../Readme.md)
 
-## Implementacao dos testes de Integracao
+## Implementação dos testes de Integração
 
 ![teste inicial {.tests-img}](../assets/test_inicial.png)
 
